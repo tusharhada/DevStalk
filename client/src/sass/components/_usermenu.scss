@@ -1,0 +1,16 @@
+.user {
+  position: relative;
+  &__avatar {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    border-radius: 50%;
+  }
+}
+
+.user:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}

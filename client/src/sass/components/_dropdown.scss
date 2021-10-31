@@ -1,0 +1,41 @@
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.2rem);
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background-color: rgba(#f7f7f7, 0.95);
+  border-radius: 1rem;
+
+  &__el {
+    border-radius: 1rem;
+    padding: 0.7rem 3rem;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: #f7ddde;
+    }
+  }
+  &__seprator {
+    margin: 0.6rem auto;
+    width: 95%;
+    height: 1px;
+    background-color: rgba($primary-color, 0.5);
+  }
+  &__icon {
+    width: 1.2rem;
+  }
+  &__text {
+    font-family: "Raleway";
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: inherit;
+  }
+  &__el:hover &__text {
+    color: $secondary-color;
+  }
+}

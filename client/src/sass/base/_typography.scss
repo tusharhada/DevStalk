@@ -1,0 +1,53 @@
+@font-face {
+  font-family: BebaseNeue;
+  src: url(../../Fonts/BebasNeue/OTF/BebasNeue-Regular.otf);
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../../Fonts/Raleway/Raleway-Light.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../../Fonts/Raleway/Raleway-Regular.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../../Fonts//Raleway/Raleway-Medium.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(../../Fonts/Raleway/Raleway-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  font-family: "Futura PT", sans-serif;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: black;
+  backface-visibility: hidden;
+  margin-bottom: 3rem;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 500;
+  }
+  &--sub {
+  }
+}
+
+.heading-secondary {
+  color: inherit;
+  &--main {
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
+  }
+  &--sub {
+    font-size: 2rem;
+  }
+}

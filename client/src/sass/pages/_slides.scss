@@ -1,0 +1,6 @@
+.slide-grid {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.6rem;
+}

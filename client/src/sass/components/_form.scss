@@ -1,0 +1,85 @@
+.form {
+  &__container {
+    border-radius: 10px;
+    background-color: rgba(white, 0.6);
+    backdrop-filter: blur(10px);
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    border: 1px solid rgba(white, 0.4);
+    box-shadow: 0 0.5rem 2rem 0 rgba(white, 0.3);
+  }
+  &__input {
+    margin-bottom: 1.8rem;
+    position: relative;
+    &__field:placeholder-shown + &__label {
+      font-size: 1.4rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-3.5rem);
+    }
+    &__label {
+      font-size: 1.6rem;
+      display: block;
+      padding: 0.6rem 2.4rem;
+      position: absolute;
+      transition: all 0.3s ease;
+      transform: translateY(-8.5rem);
+    }
+    &__field {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      width: 100%;
+      border: none;
+      border-radius: 3rem;
+      background-color: rgba(grey, 0.2);
+      padding: 1.8rem 2.4rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__button {
+    white-space: nowrap;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    border: none;
+    padding: 1.6rem 2.4rem;
+  }
+  &__info {
+    color: rgba(black, 0.3);
+    font-size: 1.35rem;
+    font-family: inherit;
+    font-weight: 600;
+    & span a {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.auth {
+  &__sidebar {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & header {
+    }
+  }
+  &__main {
+    border-radius: inherit;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    width: 70%;
+  }
+  &__header {
+    margin-bottom: 3rem;
+  }
+}

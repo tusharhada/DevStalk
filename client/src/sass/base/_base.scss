@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  //    @include respond(tab-land) { // width < 1200?
+  //        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  //    }
+  //
+  //    @include respond(tab-port) { // width < 900?
+  //        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  //    }
+  //
+  //    @include respond(big-desktop) {
+  //        font-size: 75%; //1rem = 12, 12/16
+  //    }
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  background-image: url("../../images/gradient-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 1.5rem;
+  background-color: #b4add8;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #c8c3e2;
+  border: 1px #fff;
+  box-shadow: 0px 15px 30px rgba(white, 0.8), 0px -15px 60px rgba(black, 0.3);
+  border-radius: 1rem;
+}
+
+// Link Reset
+ul,
+li {
+  text-indent: none;
+  list-style-type: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: inherit;
+}
+
+.specialentry {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & svg {
+    width: 50rem;
+  }
+}

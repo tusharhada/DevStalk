@@ -1,0 +1,321 @@
+.project-form {
+  &__modal {
+    overflow: hidden;
+    height: 80vh;
+    width: 70vw;
+    background-color: #f7f5f5;
+    padding: 10rem 17rem;
+    padding-top: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &--heading {
+      font-family: "Raleway";
+      font-size: 6rem;
+      font-weight: 600;
+    }
+    &--button button:nth-child(2) {
+      margin-left: 3rem;
+    }
+    &--wrapper {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      flex-grow: 1;
+      display: flex;
+
+      &--inner {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &--back {
+      position: absolute;
+      top: 7%;
+      left: 6%;
+      & img {
+        width: 4rem;
+      }
+    }
+  }
+
+  &__illustration {
+    height: auto;
+    width: 50rem;
+  }
+
+  &__title {
+    position: relative;
+    & label {
+      position: absolute;
+      display: inline-block;
+      top: 12%;
+      left: 0;
+      transform: translateX(-6rem);
+      font-size: 2.5rem;
+      opacity: 1;
+      transition: all 0.3s ease;
+      padding-right: 1rem;
+    }
+    & input {
+      width: 100%;
+      font-size: 4rem;
+      font-family: "Raleway";
+      color: $primary-color;
+      background-color: transparent;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: $primary-color;
+      }
+      &:placeholder-shown {
+        border: none;
+        & + label {
+          opacity: 0;
+          transform: translateX(1.2rem);
+        }
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: 1.4rem;
+    position: relative;
+    & label {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      transform: translateX(-8rem);
+      font-size: 1.5rem;
+      opacity: 1;
+      transition: all 0.3s ease;
+      padding-right: 1rem;
+    }
+    & textarea {
+      resize: none;
+      overflow: auto;
+      width: 100%;
+      height: 30rem;
+      word-wrap: break-word;
+      border: none;
+      outline: none;
+      font-family: "Raleway";
+      font-size: 2rem;
+      background-color: transparent;
+      background-color: #f7ddde;
+      padding: 2rem;
+      border-radius: 1rem;
+      position: relative;
+      &:placeholder-shown {
+        border: none;
+        & + label {
+          opacity: 0;
+          transform: translateX(1.2rem);
+        }
+      }
+    }
+  }
+
+  &__tag {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: #f7ddde;
+    padding: 0.2rem 1rem;
+
+    &--inputArea {
+      margin-top: 1rem;
+      height: 4rem;
+      border: 1px solid #aaa9a9;
+      border-radius: 1rem;
+    }
+    &--container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      max-height: 100%;
+    }
+    &--input {
+      font-family: "Raleway";
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      outline: none;
+    }
+    &--name {
+      font-family: "Raleway";
+      display: inline-block;
+      font-size: 1.4rem;
+    }
+    &--delete {
+      width: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__tagline {
+    height: 100%;
+    &--input {
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: "Raleway";
+      color: $primary-color;
+      background-color: transparent;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: $primary-color;
+      }
+    }
+  }
+  &__domain {
+    &--input {
+      font-family: "Raleway";
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: 1px solid #aaa9a9;
+      border-radius: 1rem;
+    }
+  }
+  // Image and Logo Post Styles
+  &__logo {
+    color: $primary-color;
+    margin-bottom: 2rem;
+    &--area {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: 3px dashed rgba($primary-color, 0.3);
+      position: relative;
+      &-field {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 50%;
+        z-index: 3;
+      }
+      &-click {
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+      }
+    }
+    &--image {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    &--textfield {
+      margin-left: 3rem;
+      font-family: "Raleway";
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+  &__media {
+    color: $primary-color;
+    width: 100%;
+    flex-grow: 1;
+    font-weight: 500;
+    display: flex;
+    &--dropArea {
+      flex-basis: 85%;
+      border-radius: 2rem;
+      border: 3px dashed rgba($primary-color, 0.3);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      &-field {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    &--heading {
+      font-size: 4rem;
+    }
+    &--subheading {
+      font-size: 2rem;
+    }
+    &--files {
+      flex-basis: 15%;
+      overflow-y: scroll;
+      white-space: nowrap;
+      &__file {
+        margin: 1rem;
+        height: 25%;
+        border-radius: 2rem;
+        & img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2rem;
+        }
+      }
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+      }
+    }
+  }
+
+  //Third Page
+  &__embed {
+    padding-right: 12rem;
+    &__container {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+    &__input {
+      padding: 1.5rem 3rem;
+      border: none;
+      border: 1px solid $secondary-color;
+      border-radius: 1.4rem;
+      margin-left: 2rem;
+      width: 100%;
+      font-family: "Raleway";
+      font-size: 1.5rem;
+      font-weight: 600;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__icon {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+}
+
+.dashed-border {
+  border: 3px dashed rgba($primary-color, 0.3);
+}

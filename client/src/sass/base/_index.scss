@@ -1,0 +1,32 @@
+.App{
+  z-index: 1;
+  position: relative;
+}
+
+.nav{
+  z-index: 10;
+  position: relative;
+}
+
+.nav_submenu{
+}
+
+.wrap{
+  z-index: -1;
+  position: relative;
+  &__inner{
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.filter{
+  z-index: 1;
+}
+
+.overlay {
+  z-index: 100;
+}
+.modal {
+  z-index: 101;
+}

@@ -1,0 +1,30 @@
+.input-field {
+  &__container {
+    position: relative;
+  }
+  &__field:placeholder-shown + &__label {
+    font-size: 1.4rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3.5rem);
+  }
+  &__label {
+    font-size: 1.6rem;
+    display: block;
+    padding: 0.6rem 2.4rem;
+    position: absolute;
+    transition: all 0.3s ease;
+    transform: translateY(-8.5rem);
+  }
+  &__field {
+    font-size: 1.4rem;
+    width: 100%;
+    border: none;
+    border-radius: 3rem;
+    background-color: rgba(grey, 0.2);
+    padding: 1.8rem 2.4rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}

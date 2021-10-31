@@ -1,0 +1,182 @@
+.follow__prompt {
+  & a {
+    transition: color 0.2s ease;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.project {
+  &-container {
+    padding: 10rem 0;
+  }
+  &-content {
+    padding: 0rem 20%;
+  }
+  &-seprator {
+    height: 1px;
+    width: 100%;
+    background-color: rgba($primary-color, 0.4);
+    margin: 0rem 5rem;
+  }
+
+  &-header {
+    margin-bottom: 5rem;
+  }
+  &-carousel {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 8rem;
+  }
+  &-details {
+    margin-bottom: 8rem;
+  }
+  &-user_details {
+  }
+}
+
+.project-header {
+  padding: 3rem;
+  font-family: "Raleway";
+  display: flex;
+  justify-content: space-between;
+  &__user {
+    display: flex;
+  }
+  &__logo {
+    margin-right: 2rem;
+    width: 7rem;
+    border-radius: 50%;
+    & img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &__domain {
+    margin-left: 2rem;
+    padding: 0.4rem 1.5rem;
+    background-color: #f5f4f4;
+    box-shadow: 0 0.3rem 2rem rgba(black, 0.2);
+    color: $secondary-color;
+    border-radius: 1rem;
+    font-family: "Futura PT";
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    & span {
+      margin: 0 1rem;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    &__button {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      &__svg {
+        margin-right: 1rem;
+        width: 2rem;
+        fill: $primary-color;
+        &--liked {
+          fill: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.project-details {
+  &__tagline {
+    font-family: "Raleway";
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  &__description {
+    font-family: "Raleway";
+    line-height: 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  &__embed__button {
+    display: flex;
+    align-items: center;
+    background-color: #f5f4f4;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    & svg {
+      width: 2.5rem;
+      height: auto;
+    }
+    & span {
+      font-family: "Raleway";
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.project-user_details {
+  font-family: "Raleway";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__avatar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  &__img {
+    flex-grow: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    & img {
+      width: 100%;
+    }
+  }
+  &__name {
+    font-size: 3rem;
+  }
+}
+
+.recommended {
+  &__container {
+    padding: 10rem 10rem;
+  }
+  &__heading {
+    font-family: "Raleway";
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+}
+
+.heading-decorator {
+  margin-left: 2rem;
+  height: 3px;
+  background-color: $secondary-color;
+  flex-grow: 1;
+}

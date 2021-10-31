@@ -1,0 +1,15 @@
+.wrap {
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  padding: 1rem;
+  width: 95%;
+  &--inner {
+    margin: 5rem 5rem;
+  }
+}
+
+.pre--wrap {
+  margin: auto;
+  margin-top: 5rem;
+}

@@ -1,0 +1,33 @@
+.noresult {
+  margin: 10rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  &__illustration {
+    display: block;
+    width: 15%;
+  }
+  &__heading {
+    margin-top: 2rem;
+    line-height: 5rem;
+    width: 25%;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 3.5rem;
+    & span {
+      color: rgba($secondary-color, 1);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+  &__heading2 {
+    color: #687980;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}

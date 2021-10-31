@@ -1,0 +1,147 @@
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 3rem;
+}
+
+.highlight {
+  color: $secondary-color;
+}
+
+.underline {
+  display: inline;
+  padding: 0;
+  border-bottom: 2px solid $secondary-color;
+}
+
+.flex {
+  display: flex;
+  &-row {
+    flex-direction: row;
+  }
+  &-col {
+    flex-direction: column;
+  }
+  &-basis__half {
+    flex-basis: 50%;
+  }
+  &-basis_75 {
+    flex-basis: 75%;
+  }
+  &-basis_25 {
+    flex-basis: 25%;
+  }
+}
+
+.items {
+  &-center {
+    align-items: center;
+  }
+  &-start {
+    align-items: flex-start;
+  }
+}
+
+.justify {
+  &-center {
+    justify-content: center;
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+
+  &-start {
+    justify-content: flex-start;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.button-reset {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+}
+
+//Centers
+.u-margin-zero {
+  margin: 0 !important;
+}
+.u-center-text {
+  text-align: center !important;
+}
+
+//uppercase
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.u-margin-bottom-text-xs {
+  margin-bottom: 0.6rem !important;
+}
+.u-margin-bottom-text-s {
+  margin-bottom: 3rem !important;
+}
+
+//Margin
+.u-margin-top-text-xs {
+  margin-top: 0.6rem !important;
+}
+.u-margin-top-text-s {
+  margin-top: 1.5rem !important;
+}
+
+.u-margin-top-s {
+  margin-top: 2.5rem !important;
+}
+.u-margin-top-m {
+  margin-top: 8rem !important;
+}
+.u-margin-bottom-m {
+  margin-bottom: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 4rem !important;
+  }
+}
+.u-margin-bottom-s {
+  margin-bottom: 4rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+.u-margin-bottom-xs {
+  margin-bottom: 2rem !important;
+}
+
+// left
+.u-margin-left-text-xs {
+  margin-left: 0.6rem !important;
+}
+.u-margin-left-text-s {
+  margin-left: 3rem !important;
+}
+
+//Margin
+.u-margin-left-s {
+  margin-left: 4rem !important;
+}
+
+.u-margin-left-m {
+  margin-left: 8rem !important;
+  @include respond(tab-port) {
+    margin-left: 4rem !important;
+  }
+}
+
+.u-margin-left-xs {
+  margin-left: 2rem !important;
+}

@@ -1,0 +1,127 @@
+.nav {
+  // Styles
+  /*background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;*/
+  width: 100%;
+  //Position
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem 4.5rem 1rem 4.5rem;
+  //FLEX
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway";
+
+  &__part {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+  &__el {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  &__logo {
+    font-size: 4rem;
+    font-weight: 400;
+    color: $primary-color;
+    margin-right: 4rem;
+    &__image {
+      width: 4rem;
+      margin-right: 1rem;
+    }
+    &-inner {
+      font-weight: 700;
+      // color: $secondary-color;
+    }
+  }
+  &__icon {
+    width: 2.2rem;
+    margin-right: 0.7rem;
+    transition: fill 0.2s ease;
+    &:hover {
+      fill: $secondary-color;
+    }
+  }
+  &__menu {
+    position: relative;
+    display: flex;
+    &__item {
+      margin-right: 3rem;
+      &__link {
+        color: $primary-color;
+        font-weight: 600;
+        font-size: 1.7rem;
+        transition: all 0.2s ease;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  &__submenu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 1rem;
+    margin-top: 0.7rem;
+    padding: 1.5rem;
+    background-color: rgba(#f7f7f7, 0.95);
+    backdrop-filter: blur(100rem);
+    transition: all 0.2s ease;
+    width: 39rem;
+    box-shadow: 0 0.2rem 2rem 0 rgba(black, 0.2);
+    &__item {
+      padding: 0 2rem;
+      border-radius: 1rem;
+      width: 100%;
+      transition: inherit;
+      display: flex;
+      align-items: center;
+      &__icon {
+        color: black;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+      }
+      &__text {
+        flex-grow: 1;
+        padding: 1rem 3rem;
+      }
+      &__heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+        transition: inherit;
+      }
+      &__description {
+        color: rgba(grey, 0.8);
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      &__arrow {
+        transition: inherit;
+        width: 0rem;
+      }
+      &:hover {
+        background-color: #f7ddde;
+      }
+      &:hover &__heading {
+        color: $secondary-color;
+      }
+      &:hover &__arrow {
+        width: 1.3rem;
+      }
+    }
+  }
+  &__menu__item:hover &__submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
