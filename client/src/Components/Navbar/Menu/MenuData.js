@@ -13,7 +13,7 @@ const MenuData = [
                         {
                                 id:"m1b",
                                 href: "/shots/recent",
-                                head: "New & Noteworthy",
+                                head: "Fresh",
                                 sub_head: "Up-and-coming Developers"
                         },
                         {

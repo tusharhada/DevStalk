@@ -35,7 +35,7 @@ const Register = ({ changeFormType, handleChange, handleSubmit }) => {
       {/* Header */}
       <div className="auth__header">
         <h1 className="heading-secondary heading-secondary--main">
-          Sign up to Cold Slide
+          Sign up to devStalk
         </h1>
         <p className="heading-secondary heading-secondary--sub">
           <span>Already a member ? </span>

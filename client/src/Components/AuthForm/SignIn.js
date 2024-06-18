@@ -29,7 +29,7 @@ const SignIn = ({ changeFormType, handleChange, handleSubmit }) => {
     <div className="auth__content">
       <div className="auth__header">
         <h1 className="heading-secondary heading-secondary--main">
-          Sign in to Cold Slide
+          Sign in to devStalk
         </h1>
         <p className="heading-secondary heading-secondary--sub">
           <span>Not a member ? </span>

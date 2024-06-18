@@ -27,7 +27,7 @@ const Options = ({ option }) => {
           id="recent-btn"
           className={`${option === "recent" ? "active" : ""}`}
         >
-          <a href="/shots/recent">New & Noteworthy</a>
+          <a href="/shots/recent">Fresh</a>
         </li>
       </ul>
     </div>
@@ -41,7 +41,7 @@ const BtnDropdown = ({ category }) => {
     if (category === "following") {
       setOption("Following");
     } else if (category === "recent") {
-      setOption("New & Noteworthy");
+      setOption("Fresh");
     } else {
       setOption("Popular");
     }
